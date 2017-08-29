@@ -11,7 +11,7 @@ class SMSNotifier
   end
 
   def send_notification(balance, minimum_balance)
-    puts %q(
+    puts %Q(
       Hey your current balance is #{balance} which is below your
       minimum_balance of #{minimum_balance}
     )
