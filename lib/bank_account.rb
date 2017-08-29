@@ -22,6 +22,7 @@ class BankAccount
 
   def notify_observers
     @observers.each { |o| o.update(balance, minimum_balance) }
+    self.changed = false
   end
 
   def minimum_balance?
